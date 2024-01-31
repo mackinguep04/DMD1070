@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansfield Supply</title>
+</head>
+<body>
+    <div class="border">
+        <div class="logoheader">
+            <div class="headerlogo">
+                <h1><img src="images/logo.png" alt="logo"> Mansfield Supply</h1>
+        </div>
+        </div>
+    </div>
+    <div class="border">
+        <div class="navbox">
+            <nav>
+                <h3><a href="index.html">Home</a></h3>
+                <h3><a href="products.html">Products</a></h3>
+                <h3><a href="services.html">Services</a></h3>
+                <h3><a href="about.html">About</a></h3>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+    <div class="box">
+
+        <div class="blurb">
+            <h3>About</h3>
+            <h1>Four generations of service, and still going strong.</h1>
+        </div>
+
+        <section>
+            <div class="item">
+                <div class="slideshowcontainer">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/vintagephoto1.jpg" alt="slideshow1">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/vintagephoto2.jpg" alt="slideshow2">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/vintagephoto3.jpg" alt="slideshow3">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                                </div>
+            <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </div>
+        </section>
+        <section>
+          <div class="item">
+            
+            <button type="button" class="collapsible">The History</button>
+            <div class="content">
+              <p>In the 1950's, Ed Trepal was building houses in Mansfield. At the time, he was transporting a lot of his supplies from Eastford Building Supply, the store he had founded a few years prior. Ed talked his son-in-law, Herman Barlow Sr., into opening a hardware store in Mansfield to cut down on the travel time in his building business. Since the grand opening in the spring of 1954, Mansfield Supply has been operated by the family of the founders. Herman Sr., "The Boss", ran the store until the age of eighty-seven. The store is now operated by two of his sons.
+
+              </p>
+            </div>
+            <button type="button" class="collapsible">The Crew</button>
+            <div class="content">
+              <p>Mansfield Supply owes its longevity in part to a plain, steady work ethic. Customers show up because we do. Our small team has over 150 years of combined service experience in this very store. Forget the monster department stores, and give us a try. We guarantee you'll see the difference!</p>
+            </div>
+            <button type="button" class="collapsible">The Story</button>
+            <div class="content">
+              <p>Dear Neighbor,
+                Mansfield Supply is known for its customer service. Our basement workshop has proven a lifesaver to many! We are not driven by the bottom line, but by the desire to provide solutions and exceed the expectations of our customers. So even if you don't have a leak, just stop by to say hello and we'll see if we can put a smile on your face!</p>
+                
+                <p>We don't try to imitate big-box stores, but to be your helpful neighbor. We hire full-time employees, and the owners are always in the shop. Our knowledgeable staff focuses on providing friendly and helpful service. Many of our employees have been with the store for several decades, and they all have an in-depth knowledge of our products. We have the most qualified retail help in the area. If we don't meet or exceed your expectations, please let us know. We put our resources into product and service instead of mass marketing, so if you think we do a good job, tell your friends! Customers with positive experiences are our best advertising.</p>
+                
+                <p>We have the buying power of Ace Hardware, but have chosen to opt out of Ace's advertising. Not being encumbered by a corporate program frees up space and resources to better meet your needs. The way we have survived for over 50 years is by listening to you. Being local and owner-operated means that we are able to serve you much better than any place that has to answer to a corporate board.
+                
+                We hope to see you soon!</p>
+            </div>
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+        </div>
+    </section>
+    </div>
+
+    <div class="border">
+        <div class="footerbox">
+            <div class="logoheader">
+                <div class="headerlogo">
+                    <img src="images/whitelogo.png" alt="whitelogo">
+            </div>
+            </div>
+            <footer>
+                <h3><a href="contact.html">Home</a></h3>
+                <h3><a href="contact.html">Contact</a></h3>
+                <h3><a href="services.html">Services</a></h3>
+                <h3><a href="about.html">About</a></h3>
+                <h3><a href="help.html">Help</a></h3>
+                <h3><a href="products.html">Products</a></h3>
+            </footer>
+    <footer>
+    <p><img src="images/Email_Icon.svg" alt="mail"> Email: <a href="help4u@mansfieldsupply.com">help4u@mansfieldsupply.com</a>
+    </p>
+    
+    <p><img src="images/mail.svg" alt="map"> Location: 1527 Storrs Rd. Storrs, CT 06268
+    
+    </p>
+    
+    <p><img src="images/icon/Phone_Icon.svg" alt="phone"> Telephone: <a href="860-429-2990">860 429 2990</a>
+    </p>
+    
+    <p><img src="images/clock.svg" alt="clock"> Hours: Open Mon-Sat 7:30-6 | Closed Sunday
+    
+    
+    </p>
+    </footer>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

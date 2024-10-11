@@ -1,0 +1,331 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+
+}
+@media only screen and (min-width: 800px) {
+    .container {
+        width:100%;
+        justify-content: center;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+        width: 50%;
+    }
+
+    .collapsible {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border: 1px solid black;
+      }
+      
+      .active, .collapsible:hover {
+        background-color:#8BAFD1;
+        color: white;
+      }
+      
+      .content {
+        padding: 0 18px;
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+
+      .slideshowcontainer {
+        display: flex;
+        width: 400px;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+    }
+    .navbox {
+        width:100%;
+        background-color: #60A0DC;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+
+.container {
+    width:100%;
+    background-color: #f9f9f9;
+    font-family: 'Lato', sans-serif;
+}
+
+.item {
+    width:100%;
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.item img {
+    width:100%;
+}
+
+.blurb {
+    width:100%;
+    font-weight: 100;
+    background-color: #F4F4F4;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    width:80%;
+    margin:auto;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-content: center;
+    gap:20px;
+
+    }
+
+section h2 {
+    color:grey;
+    font-size: 30px;
+    text-align: center;
+}
+
+section h1 {
+    color:black;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+section p {
+    font-size: 20px;
+}
+
+.browse {
+    width:100%;
+    font-weight: 100;
+    padding: 20px;
+    border-radius: 5px 5px;
+    background-image: url('../images/sparkslight.png');
+background-size: cover;
+background-position: center;
+}
+
+.browse h1 {
+    color:white;
+}
+
+.border {
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbox {
+    width:100%;
+    background-color: #60A0DC;
+
+}
+
+
+.logoheader {
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.logoheader, h1 {
+color:black;
+font-size: 36px;
+}
+
+.headerlogo {
+display: flex;
+flex-direction: row;
+gap:20px;
+font-size: 26px;
+}
+.headerlogo img {
+    width: 100px;
+}
+
+nav {
+    gap:20px;
+    font-size: 20px;
+}
+    nav, a {
+        color:white;
+        font-weight: 500;
+        font-style: normal;
+        margin:30px;
+        text-decoration: underline;
+      }
+
+      .collapsible {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        border: none;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border: 1px solid black;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+        color: white;
+      }
+      
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+
+      .slideshowcontainer {
+        position: relative;
+        width:100%;
+      }
+      
+    .slideshowcontainer, img {
+    width:100%;
+    }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+
+      .footerbox {
+        width:100%;
+        display:flex;
+        align-items: center;
+        background-color: #6C6969;
+        flex-direction: column;
+        padding:20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        color:white;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap:10px;
+    }
+
+    footer a {
+        color: #f1f1f1;
+        text-decoration: none;
+        margin:10px;
+    }
+    footer img {
+        width: 20px;
+    }
+footer a:hover {
+    color:#aeaeae;
+    text-decoration: underline;
+}
